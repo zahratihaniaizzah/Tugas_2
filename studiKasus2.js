@@ -5,7 +5,7 @@ const seleksiSiswa = [
     { nama: "ohyul", IPK: 3.8, pendapatan: 9600000 },
     { nama: "louis", IPK: 2.9, pendapatan: 3000000 }
 ];  
-function cekBeasiswa(dataMahasiswa) {
+function seleksiBeasiswa(dataMahasiswa) {
     for (let i = 0; i < dataMahasiswa.length; i++) {
 
         if (dataMahasiswa[i].IPK >= 3.5 && dataMahasiswa[i].pendapatan <= 5000000) {
@@ -15,4 +15,4 @@ function cekBeasiswa(dataMahasiswa) {
         }
     }  
 }    
-    cekBeasiswa(seleksiSiswa);
+    seleksiBeasiswa(seleksiSiswa);
