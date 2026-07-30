@@ -1,9 +1,9 @@
 let kalori = [500, 300, 400, 200, 100];
 
-function evaluasiAsupanKalori(data, targetKalori) {
+function evaluasiAsupanKalori(dataKalori, targetKalori) {
     let totalKalori = 0;
-    for (let i = 0; i < data.length; i++) {
-        totalKalori += data[i];
+    for (let i = 0; i < dataKalori.length; i++) {
+        totalKalori += dataKalori[i];
     }
     console.log("Total Kalori: " + totalKalori);
 

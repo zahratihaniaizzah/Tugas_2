@@ -6,7 +6,7 @@ const platKendaraan = [
     "DD7895IJ"
 ];
 
-function filterParkirGanjilGenap(data, tanggal) {
+function filterParkirGanjilGenap(dataPlat, tanggal) {
 
     let jenisTanggal;
 
@@ -20,9 +20,9 @@ function filterParkirGanjilGenap(data, tanggal) {
     console.log("Jenis tanggal    : " + jenisTanggal);
     console.log("Kendaraan yang boleh masuk:");
 
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < dataPlat.length; i++) {
 
-        let angka = data[i][5];
+        let angka = dataPlat[i][5];
         let jenisPlat;
 
         if (angka % 2 == 0) {
@@ -32,7 +32,7 @@ function filterParkirGanjilGenap(data, tanggal) {
         }
 
         if (jenisPlat == jenisTanggal) {
-            console.log(data[i] + " (" + jenisPlat + ") boleh masuk");
+            console.log(dataPlat[i] + " (" + jenisPlat + ") boleh masuk");
         }
     }
 }
