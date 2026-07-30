@@ -1,4 +1,4 @@
-let platKendaraan = [
+const platKendaraan = [
     "DD1234AB",
     "DD5678CD",
     "DD9013EF",
